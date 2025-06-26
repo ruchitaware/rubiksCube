@@ -242,17 +242,9 @@ class RubiksCube {
         console.log("Solving Last Layer:");
 
         // Example moves to orient last layer (OLL)
-        const ollMoves = ["F", "R", "U", "R'", "U'", "F'"];
-        ollMoves.forEach(move => {
-            console.log("Move (OLL):", move);
-            this.rotate(move);
-            this.printCube();
-        });
-
-        // Example moves to permute last layer (PLL)
-        const pllMoves = ["R'", "F", "R'", "B2", "R", "F'", "R'", "B2", "R2"];
-        pllMoves.forEach(move => {
-            console.log("Move (PLL):", move);
+        const moves = ["F", "R", "U", "R'", "U'", "F'"];
+        moves.forEach(move => {
+            console.log("Move:", move);
             this.rotate(move);
             this.printCube();
         });
